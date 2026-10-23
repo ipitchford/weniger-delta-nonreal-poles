@@ -1,0 +1,1211 @@
+{
+ "A_deltaQ_tailratio_rational_form": {
+  "DeltaQ_identity_checked_n_k": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    8
+   ]
+  ],
+  "rational_form_vs_definition_point_checks": 81,
+  "tail_ratio_identity_over_Qb": [
+   {
+    "R_k_at_b0": "9/2",
+    "k": 3
+   },
+   {
+    "R_k_at_b0": "10/3",
+    "k": 4
+   },
+   {
+    "R_k_at_b0": "35/12",
+    "k": 5
+   },
+   {
+    "R_k_at_b0": "27/10",
+    "k": 6
+   },
+   {
+    "R_k_at_b0": "77/30",
+    "k": 7
+   },
+   {
+    "R_k_at_b0": "52/21",
+    "k": 8
+   },
+   {
+    "R_k_at_b0": "135/56",
+    "k": 9
+   },
+   {
+    "R_k_at_b0": "85/36",
+    "k": 10
+   },
+   {
+    "R_k_at_b0": "209/90",
+    "k": 11
+   },
+   {
+    "R_k_at_b0": "126/55",
+    "k": 12
+   }
+  ]
+ },
+ "A_symbolic_identities": {
+  "F11_coefficients_ascending": [
+   1296,
+   1728,
+   432
+  ],
+  "corner_identities_F00_F01_F10_F11": "verified over Q[b]",
+  "disc_identity_Disc_p_equals_x2_F": "verified as a polynomial identity over Q[b,x,y]",
+  "disc_identity_number_of_monomials": 41,
+  "factorisation_at_x_y_one": "verified over Q[b]",
+  "positive_boundary": "(sqrt(33)-5)/2, positive root of b^2+5b-2"
+ },
+ "B_cubic_example": {
+  "P_integer_ascending": [
+   1791106733855748,
+   46466411172340109,
+   97982085915007665,
+   54669622547365000
+  ],
+  "Q_integer_ascending": [
+   54855937892,
+   966634623774,
+   1963236457665,
+   1071932365000
+  ],
+  "beta": "1",
+  "borghi_P3_nonreal_zero_count": 2,
+  "discriminant_Q": "-16407441394630862189702708459297984636170197900",
+  "gcd_P_Q": "1",
+  "k": 3,
+  "measure": "delta_1 + 50 delta_(1/50) + (1/1000) exp(-t) dt",
+  "n": 0,
+  "rational_approximant": "P(z)/(1000*z*Q(z))",
+  "resultant_P_Q": "33621435161049423075327704311040638808121503889986293650034479300000000000000000"
+ },
+ "B_cubic_sharpness_family": [
+  {
+   "beta": "1",
+   "first_K": 128,
+   "n": 0
+  },
+  {
+   "beta": "1",
+   "first_K": 512,
+   "n": 1
+  },
+  {
+   "beta": "2/5",
+   "first_K": 4096,
+   "n": 0
+  },
+  {
+   "beta": "1/2",
+   "first_K": 16384,
+   "n": 3
+  }
+ ],
+ "B_legendre_perturbation": [
+  {
+   "L": 1,
+   "first_changed_moment_integral": "1/6"
+  },
+  {
+   "L": 2,
+   "first_changed_moment_integral": "1/30"
+  },
+  {
+   "L": 3,
+   "first_changed_moment_integral": "1/140"
+  },
+  {
+   "L": 4,
+   "first_changed_moment_integral": "1/630"
+  },
+  {
+   "L": 5,
+   "first_changed_moment_integral": "1/2772"
+  },
+  {
+   "L": 6,
+   "first_changed_moment_integral": "1/12012"
+  },
+  {
+   "L": 7,
+   "first_changed_moment_integral": "1/51480"
+  },
+  {
+   "L": 8,
+   "first_changed_moment_integral": "1/218790"
+  }
+ ],
+ "B_quartic_example": {
+  "P_integer_ascending": [
+   -83485463338713495208696,
+   8862395637097892836188527,
+   808345456247443334317918249,
+   1345357389237898766149476576,
+   587390801791674306730044000
+  ],
+  "Q_integer_ascending": [
+   139692321001730,
+   508388122214334600,
+   24653951028874577475,
+   40536707773004833728,
+   17621547662058132000
+  ],
+  "beta": "1/3",
+  "borghi_P4_nonreal_zero_count": 2,
+  "discriminant_Q": "-8311643787765917409132828657802803642526257721597616861939623433867385041477252522908123850200789665597685324800",
+  "gcd_P_Q": "1",
+  "k": 4,
+  "laguerre_value_at_minus_one": "-16188455819862407838029037564016194858",
+  "measure": "delta_1 + 100000 delta_(1/100) + (1/1000) exp(-t) dt",
+  "n": 0,
+  "rational_approximant": "(3/1000)*P(z)/(z*Q(z))",
+  "same_measure_cubic_discriminant_sign": 1
+ },
+ "C_all_shift_quartic": {
+  "all_coefficients_negative": true,
+  "compactness_disc_identity": "(b+5)(b+6)^2 Disc(g_b) = -8(b+3)(b^2+8b+6) <= -(4/5)(b+5)(b+6)^2",
+  "compactness_limit_quadratic": "g_b = z^2 + 4(b+3)/(b+6) z + 6(b+2)(b+3)/((b+5)(b+6))",
+  "degree_12_cofactor_positive_integer_coefficients_ascending": [
+   54273916071080574965653195359048877360295336730188640000,
+   3445085445594855924510804608368058153022163115004978696000,
+   13361356353531681175081135104999924230727978747846573023100,
+   23724895614254605157427533527129638137963488980726539979300,
+   25034651072473702814740125127431483860611193962249816835895,
+   17386617024090989169554645404216951191244025458137771628548,
+   8334969449639300531066093864409535986560997659296734292306,
+   2812063544696510720645452249714642724228725895458179906600,
+   667066626145228546585969886774425226665446257798724544803,
+   108893197403699633773407623027431665876748434665343625224,
+   11628522941943450128843563175218951557928647838960811748,
+   729129924905458880388859585252968705981272585541588528,
+   20253609025151635566357210701471352943924238487266348
+  ],
+  "discriminant_degree_in_beta": 18,
+  "factorisation": "-Disc = multiplier*(b+1)(b+2)^2(b+4)^2(b+5)*C(b)",
+  "hankel_leading_minors": [
+   "1001001/1000",
+   "493031551/500000",
+   "3815789741501/50000000000"
+  ],
+  "k": 4,
+  "measure": "delta_1 + 100000 delta_(1/100) + (1/1000) exp(-t) dt",
+  "n": 0,
+  "negative_discriminant_multiplier": "163840000000000/341013652828920270778100939249642694560416322442498359073723076041",
+  "same_measure_other_starting_indices": {
+   "1": {
+    "all_coefficients_negative": true,
+    "coefficient_signs_present": [
+     -1
+    ],
+    "degree_in_beta": 18,
+    "discriminant_at_beta_0_sign": -1
+   },
+   "2": {
+    "all_coefficients_negative": false,
+    "beta_1_real_zero_count": 4,
+    "coefficient_signs_present": [
+     -1,
+     1
+    ],
+    "degree_in_beta": 18,
+    "discriminant_at_beta_0_sign": 1
+   }
+  }
+ },
+ "D_persistence_fixed_measure": {
+  "all_orders_3_to_kmax_have_nonreal_zeros": true,
+  "beta": "1",
+  "first_nonreal_jensen_degree": 6,
+  "jensen_g6_primitive_integer_ascending": [
+   77914299811685441471102387178199751568,
+   915302430077392769375787926087540330064,
+   1161862931661237343876757825493673262775,
+   507504218466986483125378827585909820000,
+   87001390430148782514278768464404562500,
+   4532166093986160999086092232618250000,
+   35850467697187863050080357803125000
+  ],
+  "jensen_polynomials_of_limit_E": [
+   {
+    "d": 1,
+    "nonreal_zero_count": 0
+   },
+   {
+    "d": 2,
+    "nonreal_zero_count": 0
+   },
+   {
+    "d": 3,
+    "nonreal_zero_count": 0
+   },
+   {
+    "d": 4,
+    "nonreal_zero_count": 0
+   },
+   {
+    "d": 5,
+    "nonreal_zero_count": 0
+   },
+   {
+    "d": 6,
+    "nonreal_zero_count": 2
+   },
+   {
+    "d": 7,
+    "nonreal_zero_count": 2
+   },
+   {
+    "d": 8,
+    "nonreal_zero_count": 4
+   },
+   {
+    "d": 9,
+    "nonreal_zero_count": 4
+   },
+   {
+    "d": 10,
+    "nonreal_zero_count": 4
+   },
+   {
+    "d": 11,
+    "nonreal_zero_count": 4
+   },
+   {
+    "d": 12,
+    "nonreal_zero_count": 4
+   }
+  ],
+  "kmax": 30,
+  "measure": "delta_1 + 50 delta_(1/50) + (1/1000) exp(-t) dt",
+  "n": 0,
+  "orders": [
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 1,
+    "nonreal_zero_count_Q": 0,
+    "nonreal_zero_count_borghi_P": 0
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 2,
+    "nonreal_zero_count_Q": 0,
+    "nonreal_zero_count_borghi_P": 0
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 3,
+    "nonreal_zero_count_Q": 2,
+    "nonreal_zero_count_borghi_P": 2
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 4,
+    "nonreal_zero_count_Q": 2,
+    "nonreal_zero_count_borghi_P": 2
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 5,
+    "nonreal_zero_count_Q": 2,
+    "nonreal_zero_count_borghi_P": 2
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 6,
+    "nonreal_zero_count_Q": 2,
+    "nonreal_zero_count_borghi_P": 2
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 7,
+    "nonreal_zero_count_Q": 2,
+    "nonreal_zero_count_borghi_P": 2
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 8,
+    "nonreal_zero_count_Q": 4,
+    "nonreal_zero_count_borghi_P": 4
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 9,
+    "nonreal_zero_count_Q": 4,
+    "nonreal_zero_count_borghi_P": 6
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 10,
+    "nonreal_zero_count_Q": 4,
+    "nonreal_zero_count_borghi_P": 8
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 11,
+    "nonreal_zero_count_Q": 6,
+    "nonreal_zero_count_borghi_P": 8
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 12,
+    "nonreal_zero_count_Q": 6,
+    "nonreal_zero_count_borghi_P": 8
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 13,
+    "nonreal_zero_count_Q": 6,
+    "nonreal_zero_count_borghi_P": 10
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 14,
+    "nonreal_zero_count_Q": 6,
+    "nonreal_zero_count_borghi_P": 10
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 15,
+    "nonreal_zero_count_Q": 8,
+    "nonreal_zero_count_borghi_P": 12
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 16,
+    "nonreal_zero_count_Q": 8,
+    "nonreal_zero_count_borghi_P": 12
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 17,
+    "nonreal_zero_count_Q": 8,
+    "nonreal_zero_count_borghi_P": 12
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 18,
+    "nonreal_zero_count_Q": 8,
+    "nonreal_zero_count_borghi_P": 14
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 19,
+    "nonreal_zero_count_Q": 8,
+    "nonreal_zero_count_borghi_P": 14
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 20,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 14
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 21,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 16
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 22,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 16
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 23,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 16
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 24,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 25,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 26,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 27,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 28,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 29,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 18
+   },
+   {
+    "gcd_degree_P_Q": 0,
+    "k": 30,
+    "nonreal_zero_count_Q": 10,
+    "nonreal_zero_count_borghi_P": 20
+   }
+  ]
+ },
+ "E_tail_family_explicit_examples": [
+  {
+   "K": 2048,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 1024,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 4,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 4,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 5,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 4,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 4,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 0,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 2,
+   "gcd_degree_P_Q": 0,
+   "k": 6,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 0,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 7,
+   "n": 1,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 0,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 0,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 4,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 0,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "1/10",
+   "borghi_P_nonreal_zero_count": 6,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 1,
+   "nonreal_zero_count_Q": 2
+  },
+  {
+   "K": 2,
+   "beta": "1",
+   "borghi_P_nonreal_zero_count": 6,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 1,
+   "nonreal_zero_count_Q": 4
+  },
+  {
+   "K": 2,
+   "beta": "5",
+   "borghi_P_nonreal_zero_count": 6,
+   "gcd_degree_P_Q": 0,
+   "k": 8,
+   "n": 1,
+   "nonreal_zero_count_Q": 6
+  }
+ ],
+ "F_natural_families_and_positive_theorem": {
+  "euler_k10_min_factor_four_ratio": 1.8229167,
+  "euler_k10_nonreal_zero_count": 0,
+  "families": {
+   "(2l)!": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "1/(l+1) (uniform on [0,1])": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Bessel K_nu moments, nu=0": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Bessel K_nu moments, nu=1/3": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Bessel K_nu moments, nu=1/4": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Gamma(3l+1) (superfactorial, nu=3)": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Gamma(l+1/2)/sqrt(pi)": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Gamma(l+5)": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "Jacobi weight t^-1/2(1-t)^1/2 on [0,1]": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": [
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      2
+     ]
+    ]
+   },
+   "Jacobi weight t^1/2(1-t)^-1/2 on [0,1]": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": [
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      2
+     ]
+    ]
+   },
+   "Jacobi weight t^1/3(1-t)^2/3 on [0,1]": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": [
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      2
+     ]
+    ]
+   },
+   "factorial l!": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   },
+   "log-normal 2^(l^2)": {
+    "Q_cases_with_nonreal_zeros": [],
+    "borghi_P_cases_with_nonreal_zeros": []
+   }
+  },
+  "grid": "k=4..8, n in {0,1,2}, beta in {1/10,1/2,1,2,5}",
+  "jacobi_large_shift_example": {
+   "beta": "20",
+   "discriminant": "-1088438206296943647129600000",
+   "gcd_degree_P_Q": 0,
+   "k": 4,
+   "n": 0,
+   "nonreal_zero_count_Q": 2,
+   "nonreal_zero_count_borghi_P": 2,
+   "primitive_Q_ascending": [
+    40425,
+    371910,
+    1020096,
+    1104000,
+    416000
+   ],
+   "weight": "t^(-1/2)(1-t)^(1/2) on [0,1]"
+  },
+  "laguerre_proportionality_cases": 48,
+  "min_delta_weight_ratio_H_j_on_grid": 1.1587213,
+  "number_of_Q_sturm_counts": 975
+ },
+ "numerical_accuracy_cooccurrence": {
+  "beta": "1",
+  "function": "100/(z+2) + int_0^inf exp(-t)/(z+t) dt",
+  "moments": "100*2^l + l!",
+  "n": 0,
+  "note": "co-occurrence only; no causal claim",
+  "rows": [
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 2,
+    "nonreal_zero_count_Q_exact": 0,
+    "relative_error_at_z1": 0.0018493901
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 4,
+    "nonreal_zero_count_Q_exact": 0,
+    "relative_error_at_z1": 0.014933343
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 8,
+    "nonreal_zero_count_Q_exact": 2,
+    "relative_error_at_z1": 0.42687241
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 12,
+    "nonreal_zero_count_Q_exact": 4,
+    "relative_error_at_z1": 1.5495578
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 16,
+    "nonreal_zero_count_Q_exact": 8,
+    "relative_error_at_z1": 1.5236198
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 20,
+    "nonreal_zero_count_Q_exact": 10,
+    "relative_error_at_z1": 0.97701043
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 30,
+    "nonreal_zero_count_Q_exact": 14,
+    "relative_error_at_z1": 0.43391235
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 40,
+    "nonreal_zero_count_Q_exact": 16,
+    "relative_error_at_z1": 0.045472409
+   },
+   {
+    "gcd_degree_P_Q_exact": 0,
+    "k": 50,
+    "nonreal_zero_count_Q_exact": 18,
+    "relative_error_at_z1": 0.0094846851
+   },
+   {
+    "k": 8,
+    "relative_error_at_z1": 2.1820669e-07,
+    "series": "Euler only"
+   },
+   {
+    "k": 30,
+    "relative_error_at_z1": 6.5408322e-18,
+    "series": "Euler only"
+   }
+  ]
+ },
+ "numerical_cubic_example_poles_residues": {
+  "poles_and_residues": [
+   {
+    "pole": [
+     -0.88322919,
+     -0.082424647
+    ],
+    "residue": [
+     0.35656541,
+     -1.3596922
+    ]
+   },
+   {
+    "pole": [
+     -0.88322919,
+     0.082424647
+    ],
+    "residue": [
+     0.35656541,
+     1.3596922
+    ]
+   },
+   {
+    "pole": [
+     -0.065034461,
+     0.0
+    ],
+    "residue": [
+     17.636769,
+     0.0
+    ]
+   }
+  ],
+  "relative_errors": {
+   "z=-0.5+0.3i": 0.013000619,
+   "z=0.1": 0.039011691,
+   "z=1": 0.00011262735,
+   "z=10": 1.1109453e-08,
+   "z=i": 0.00029269377
+  },
+  "residue_at_z0": 32.6511
+ },
+ "numerical_persistence_scaled_zeros": {
+  "limit_zero_w0_of_E": [
+   -9.1020565,
+   9.1273377
+  ],
+  "nearest_k2_z_by_order": {
+   "10": [
+    -10.115963,
+    8.0361081
+   ],
+   "20": [
+    -9.3841216,
+    8.88236
+   ],
+   "30": [
+    -9.2294884,
+    9.0212762
+   ]
+  }
+ },
+ "scope": "Exact sections certify the finite statements in the paper; all-parameter statements are proved in the paper. numerical_* sections are floating-point illustrations only.",
+ "status": "all exact checks passed"
+}

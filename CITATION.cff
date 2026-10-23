@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Nonreal poles of Weniger's delta transformation for Stieltjes series: a finite-order classification"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23586255
+date-released: 2026-10-23
+repository-code: "https://github.com/ipitchford/weniger-delta-nonreal-poles"
+url: "https://evidencepress.org/releases/weniger-delta-nonreal-poles/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23586255
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23586254
+    description: "Concept DOI (all versions)"
+keywords:
+  - Stieltjes series
+  - Weniger delta transformation
+  - Levin-type transformations
+  - real zeros
+  - multiplier sequences
+  - Pade approximation
+  - counterexample
+  - exact computation
+abstract: "Pade approximants to a Stieltjes series always have their poles on the negative real axis. Borghi (Mathematics 14 (2026) 376) asked whether Weniger's delta transformation shares this property. This package shows that in general it does not, and says exactly when it does: for every Stieltjes measure the denominator has only negative real zeros at orders one and two; at order three this holds exactly when n + beta <= (sqrt(33) - 5)/2, where n is the starting index and beta the shift; from order four on, no choice of n and beta protects every measure, and the nonreal zeros are genuine poles; for each fixed n one measure defeats every shift at order four. For one fixed measure, nonreal denominator zeros occur at every sufficiently large order (proof), and genuine nonreal poles are certified exactly at every order from 3 to 30; genuine poles at every order are conjectured. On the positive side, real-rootedness holds at every order when the reciprocal moments form a multiplier sequence or the moment ratios mu_(r+1)/mu_r increase at least fourfold at each step, which covers the Euler series, all Gamma(l + a) moments and integer superfactorial families at every n, beta and order, extending cases Borghi proved for n = 0, beta = 1. Exact rational-arithmetic certificates accompany every finite claim; the practical section is numerical. Unrefereed candidate; checked by internal AI-assisted review only (multi-perspective review, adversarial audits by a different model before and after revision, and a verification re-review). Prose and data CC0-1.0; code MIT (see LICENSES.md)."
+references:
+  - type: article
+    title: "Is Weniger's transformation capable of simulating the Stieltjes function branch cut?"
+    authors:
+      - family-names: Borghi
+        given-names: Riccardo
+    journal: "Mathematics"
+    volume: 14
+    issue: 2
+    start: 376
+    year: 2026
+    doi: 10.3390/math14020376

@@ -1,0 +1,184 @@
+{
+ "schemaVersion": "1.0",
+ "release": "weniger-delta-nonreal-poles",
+ "version": "1.0.0-candidate",
+ "tag": "v1.0.0-candidate",
+ "doi": "10.5281/zenodo.23586255",
+ "conceptDoi": "10.5281/zenodo.23586254",
+ "repository": "https://github.com/ipitchford/weniger-delta-nonreal-poles",
+ "creator": "Anonymous",
+ "status": "unrefereed-candidate",
+ "manuscript": "paper/paper.pdf",
+ "source": {
+  "citation": "R. Borghi, Is Weniger's transformation capable of simulating the Stieltjes function branch cut?, Mathematics 14 (2026), no. 2, 376",
+  "doi": "10.3390/math14020376",
+  "authorPreprint": "https://www.preprints.org/manuscript/202512.2647",
+  "question": "Section 3.1 (are all zeros of the denominator of eq. (23) on the negative real axis?), specialised in Section 3.3 to n=0, gamma=1",
+  "notation": "the manuscript's beta is the published article's gamma (eqs. (23), (26)); the author preprint uses beta (eqs. (26), (29))"
+ },
+ "boundary": "'proof' means a complete written proof in the manuscript (some steps are exact identities checked by the code), not formal verification; 'certificate' means an exact rational computation in code/verify_all.py, claimed only for the stated finite cases; 'numerical' means floating point, illustrative only; 'open' is not claimed. Statuses match Table 2 of the manuscript. Internal AI-assisted review is not peer review or independent reproduction.",
+ "claims": [
+  {
+   "id": "low-orders-real-rooted",
+   "location": "Proposition 2.1; Theorem 4.1(3)",
+   "status": "proof",
+   "statement": "For every admissible measure, Q_1 has one negative zero and Q_2 has two distinct negative zeros, for every n>=0 and beta>0.",
+   "computationalCheck": "none (written proof)"
+  },
+  {
+   "id": "fixed-weight-characterisation",
+   "location": "Theorem 3.2; Lemma 3.1; Remark 3.3",
+   "status": "proof",
+   "statement": "For fixed h_0..h_k>0, sum_i h_i z^i/mu_(m+i) has only negative real zeros for every admissible measure iff h_j^2 >= 4 h_(j-1) h_(j+1) for every internal j; sufficiency is the Hutchinson-Kurtz criterion, necessity a realisation lemma isolating three consecutive moments.",
+   "computationalCheck": "none (written proof)"
+  },
+  {
+   "id": "classification-order-shift",
+   "location": "Theorem 4.1; Table 1",
+   "status": "proof",
+   "statement": "Q_3^(n,beta) has three distinct negative zeros for every admissible measure iff b=n+beta <= b_c=(sqrt(33)-5)/2 ~ 0.3723; for every k>=4, n>=0, beta>0 some admissible measure gives a genuine nonreal conjugate pair of poles; the witness measure depends on (k,n,beta) and can have moments ~ c l! (determinate) or a smooth positive density (Corollary 4.6).",
+   "computationalCheck": "results/verification.json: A_symbolic_identities (corner identities, eq. (12) over Q[b,x,y]); A_deltaQ_tailratio_rational_form (eq. (8), 3<=k<=12)"
+  },
+  {
+   "id": "genuine-poles",
+   "location": "Section 4.3; Lemma 4.2; Proposition 4.3; Lemmas 4.4-4.5; Corollary 4.6",
+   "status": "proof",
+   "statement": "The nonreal zeros in the classification are genuine poles: accuracy through order n+k+1, deg gcd(P_(n,k),Q_k) < ceil(k/2) for every admissible measure (no nonreal pair cancels at k=3,4), and at k>=5 a one-moment Legendre perturbation inside the admissible class avoids the at most k-1 exceptional last moments.",
+   "computationalCheck": "results/verification.json: B_legendre_perturbation; B_quartic_example (elimination polynomial H)"
+  },
+  {
+   "id": "cubic-example",
+   "location": "Section 5 (order three); Figure 1",
+   "status": "certificate",
+   "statement": "For mu=delta_1+50 delta_(1/50)+10^-3 e^-t dt, n=0, beta=1: delta_3 = P(z)/(1000 z Q(z)) with Q = 1071932365000z^3+1963236457665z^2+966634623774z+54855937892, discriminant a negative 47-digit integer, gcd(P,Q)=1; one real pole on the cut and a genuine nonreal pair.",
+   "computationalCheck": "results/verification.json: B_cubic_example"
+  },
+  {
+   "id": "quartic-example",
+   "location": "Section 5 (order four inside the cubic-safe range)",
+   "status": "certificate",
+   "statement": "For lambda=delta_1+10^5 delta_(1/100)+10^-3 e^-t dt, n=0, beta=1/3<b_c: every cubic is real-rooted but Q_4 violates the Laguerre inequality at x=-1 (a negative 38-digit integer) and gcd(P_4,Q_4)=1.",
+   "computationalCheck": "results/verification.json: B_quartic_example"
+  },
+  {
+   "id": "cubic-sharpness-family",
+   "location": "Appendix A; Theorem 4.1(2)",
+   "status": "certificate",
+   "statement": "The family delta_1+K^(2m+1) delta_(K^-2)+K^-1 e^-t dt gives a negative cubic discriminant and gcd 1 at K=128 (n=0, beta=1), 512 (n=1, beta=1), 4096 (n=0, beta=2/5) and 16384 (n=3, beta=1/2).",
+   "computationalCheck": "results/verification.json: B_cubic_sharpness_family"
+  },
+  {
+   "id": "all-shift-quartic",
+   "location": "Proposition 5.1",
+   "status": "certificate",
+   "statement": "For lambda=delta_1+10^5 delta_(1/100)+10^-3 e^-t dt, Q_4^(n,beta) has exactly one nonreal conjugate pair of zeros, a genuine pair of poles of delta_4^(n)(beta;.), for every beta>0, for n=0 and n=1: the discriminant is a degree-18 polynomial in beta with all coefficients negative (n=0: two independent symbolic methods, factorisation -c(b+1)(b+2)^2(b+4)^2(b+5)C(b) with C of degree 12 and positive integer coefficients; n=1 asserted by the verifier). The same measure fails at n=2: Q_4^(2,1) has four negative real zeros.",
+   "computationalCheck": "results/verification.json: C_all_shift_quartic"
+  },
+  {
+   "id": "all-shift-every-n",
+   "location": "Corollary 5.2",
+   "status": "proof",
+   "statement": "For every fixed n>=0 there is an admissible measure (moments ~ c l!) such that delta_4^(n)(beta;.) has a genuine nonreal conjugate pair of poles for every beta>0 (uniform Rouche argument with the tail family; no explicit constants).",
+   "computationalCheck": "results/verification.json: C_all_shift_quartic (compactness_limit_quadratic, compactness_disc_identity)"
+  },
+  {
+   "id": "tail-family-k5-8",
+   "location": "Section 5 (orders five to eight); Table 3",
+   "status": "certificate",
+   "statement": "For the tail family mu^tail_K, k=5..8, n in {0,1}, beta in {1/10,1,5}, the smallest K=2^e (e<=16) with nonreal zeros of Q_k and gcd(P,Q)=1 is as in Table 3; no perturbation is needed.",
+   "computationalCheck": "results/verification.json: E_tail_family_explicit_examples"
+  },
+  {
+   "id": "borghi-scenario-ii",
+   "location": "Remark 5.3",
+   "status": "certificate",
+   "statement": "In every counterexample of the paper Borghi's P_k has nonreal zeros (2 for the cubic and quartic examples, 2-6 in Table 3, 2-20 in Table 4); for the non-integer Jacobi weights P_k has nonreal zeros while Q_k is real-rooted on the tested grid (a phenomenon Borghi's Figure 1 already shows at n=0, gamma=1, k=20).",
+   "computationalCheck": "results/verification.json: B_cubic_example, B_quartic_example, E_tail_family_explicit_examples, D_persistence_fixed_measure, F_natural_families_and_positive_theorem"
+  },
+  {
+   "id": "limit-function",
+   "location": "Theorem 6.1; Corollary 6.2",
+   "status": "proof",
+   "statement": "For admissible mu, (b)_(k-1)^-1 Q_k(w/k^2) -> E_mu(w)=sum_j w^j/(j!(b)_j mu_(m+j)) locally uniformly; E_mu is entire of order <=1/2; nonreal zeros of E_mu force nonreal zeros of Q_k at all large k; real-rootedness at infinitely many k forces E_mu into the Laguerre-Polya class.",
+   "computationalCheck": "none (written proof)"
+  },
+  {
+   "id": "persistence-all-large-k",
+   "location": "Theorem 6.3(2)",
+   "status": "proof",
+   "statement": "For mu=delta_1+50 delta_(1/50)+10^-3 e^-t dt, n=0, beta=1, Q_k has nonreal zeros for every k>=k_0 (k_0 not effective); the proof uses one exact certificate: the Jensen polynomial g_6 of E_mu has exactly two nonreal zeros (g_1..g_5 real-rooted). These are denominator zeros; genuineness at large k is not proved.",
+   "computationalCheck": "results/verification.json: D_persistence_fixed_measure (jensen_polynomials_of_limit_E, first_nonreal_jensen_degree=6)"
+  },
+  {
+   "id": "persistence-k3-30",
+   "location": "Theorem 6.3(1); Table 4",
+   "status": "certificate",
+   "statement": "For the same measure, Q_k^(0,1) has nonreal zeros and gcd(P_(0,k),Q_k)=1 at every 3<=k<=30, so delta_k^(0)(1;.) has genuine nonreal poles; the nonreal counts are those of Table 4.",
+   "computationalCheck": "results/verification.json: D_persistence_fixed_measure (orders, kmax=30)"
+  },
+  {
+   "id": "persistence-all-k",
+   "location": "Conjecture 6.4",
+   "status": "open",
+   "statement": "For the same measure, delta_k^(0)(1;.) has genuine nonreal poles at every order k>=3.",
+   "computationalCheck": "evidence only: Table 4, Theorem 6.3(2), numerical_persistence_scaled_zeros"
+  },
+  {
+   "id": "positive-criteria",
+   "location": "Lemma 7.1; Theorem 7.2",
+   "status": "proof",
+   "statement": "(a) If Borghi's P_k is real-rooted then Q_k^(n,beta) has only negative real zeros for every beta>0; (b) if (1/mu_(m+j)) is a multiplier sequence then Q_k is real-rooted for every k and beta; (c) if mu_(r-1)mu_(r+1) >= 4 mu_r^2 for m+1<=r<=m+k-1 then Q_k has k distinct negative zeros for every beta>0. Part (a) extends Borghi's scenario (i) from n=0, gamma=1 to every n and beta.",
+   "computationalCheck": "results/verification.json: F_natural_families_and_positive_theorem (H_j>1 on a grid)"
+  },
+  {
+   "id": "natural-families",
+   "location": "Corollary 7.3",
+   "status": "proof",
+   "statement": "Q_k^(n,beta) has only negative real zeros for every k, n, beta>0 when mu_l=Gamma(l+a) (a>0; includes the Euler series), mu_l=Gamma(nu l+c) with integer nu>=1, Beta weights t^alpha(1-t)^p on [0,1] with alpha>-1 and integer p>=0, and log-normal mu_l=exp(sigma^2 l^2/2) with sigma^2>=2 log 2. This extends to every n, beta and k the cases Borghi proved at n=0, gamma=1 (integer superfactorial, Laguerre and integer-difference Jacobi moments; his Sections 4.2, 4.3, 4.6).",
+   "computationalCheck": "results/verification.json: F_natural_families_and_positive_theorem (laguerre_proportionality_cases)"
+  },
+  {
+   "id": "natural-families-grid",
+   "location": "Section 7 (Exact tests)",
+   "status": "certificate",
+   "statement": "Every Q_k is real-rooted for 4<=k<=8, n in {0,1,2}, beta in {1/10,1/2,1,2,5} (975 exact Sturm counts) for l!, (2l)!, (3l)!, Gamma(l+1/2), Gamma(l+5), 1/(l+1), 2^(l^2), the Weniger-Cizek K_nu moments (nu in {0,1/4,1/3}) and three non-integer Jacobi weights; for the K_nu and Jacobi cases this is evidence on the grid only (beta<=5).",
+   "computationalCheck": "results/verification.json: F_natural_families_and_positive_theorem"
+  },
+  {
+   "id": "large-shift-equivalence",
+   "location": "Remark 7.4",
+   "status": "proof",
+   "statement": "For fixed n, k and admissible measure, beta^-(k-1) Q_k^(n,beta) -> P_k as beta -> infinity, so Q_k^(n,beta) is real-rooted for every beta>0 iff Borghi's P_k is real-rooted.",
+   "computationalCheck": "none (written proof)"
+  },
+  {
+   "id": "jacobi-large-shift",
+   "location": "Section 7, after Remark 7.4",
+   "status": "certificate",
+   "statement": "For the Jacobi weight t^(-1/2)(1-t)^(1/2) on [0,1], n=0, k=4, beta=20: the primitive denominator 416000z^4+1104000z^3+1020096z^2+371910z+40425 has negative discriminant, two nonreal zeros by an exact Sturm count, and gcd(P_(0,4),Q_4)=1, so delta_4 has genuine nonreal poles.",
+   "computationalCheck": "results/verification.json: F_natural_families_and_positive_theorem (jacobi_large_shift_example)"
+  },
+  {
+   "id": "factor-four-not-diagnostic",
+   "location": "Section 8 (A diagnostic)",
+   "status": "certificate",
+   "statement": "For the Euler moments at n=0, beta=1, k=10 the smallest factor-four ratio is about 1.82<4, yet Q_10 is real-rooted, so the factor-four test is sufficient only.",
+   "computationalCheck": "results/verification.json: F_natural_families_and_positive_theorem (euler_k10_*)"
+  },
+  {
+   "id": "practical-numerics",
+   "location": "Section 8; Figure 1",
+   "status": "numerical",
+   "statement": "Pole locations (nonreal pair -0.8832 +- 0.0824i), complex residues (0.357 -+ 1.360i, so delta_3 is not a Stieltjes function), relative errors at five points, scaled zeros k^2 z approaching w* ~ -9.1021+9.1273i, and the accuracy co-occurrence table (errors floating point; nonreal counts and gcd degrees exact); no causal claim.",
+   "computationalCheck": "results/verification.json: numerical_cubic_example_poles_residues, numerical_persistence_scaled_zeros, numerical_accuracy_cooccurrence"
+  }
+ ],
+ "notClaimed": [
+  "convergence or divergence of the delta approximants for any measure",
+  "one fixed measure with genuine nonreal poles at every order (Conjecture 6.4 is open); beyond k=30 only nonreal denominator zeros are proved",
+  "an explicit all-shift order-four measure for n>=2 (Corollary 5.2 gives existence only)",
+  "real-rootedness for the Weniger-Cizek K_nu family beyond the tested grid, or for any grid family at shifts beta>5",
+  "novelty of the factor-four criterion, multiplier-sequence theory, accuracy through order, or Borghi's positive cases at n=0, gamma=1",
+  "historical priority beyond the bounded search in RESEARCH_GATES.json"
+ ]
+}

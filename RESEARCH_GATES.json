@@ -1,0 +1,354 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 23 October 2026 for release 1.0.0-candidate from the dated search ledger of the first draft's bounded novelty search (19 October 2026), the adversarial audit's independent bounded literature search (23 October 2026), the revision record, the verification re-review and the post-revision adversarial audit (23 October 2026). It documents the scrutiny performed, not historical priority. No search was rerun at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Borghi's question (all zeros of the delta denominator on the negative real axis for every Stieltjes series) is false; complete order-shift classification: orders 1-2 always safe, order 3 safe iff n+beta <= (sqrt(33)-5)/2, order >= 4 never; nonreal zeros are genuine poles.",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1; Table 1; Section 4.3",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"Stieltjes\" \"poles\" \"2026\"; \"Is Weniger\" \"Borghi\"; \"Weniger\" \"Stieltjes\" \"counterexample\" poles; \"Weniger\" \"branch cut\" \"counterexample\"; \"Borghi\" \"delta\" \"nonreal\"; \"Levin\" \"Stieltjes\" \"complex poles\"; \"Levin-type\" \"Stieltjes\" \"poles\"; \"delta transformation\" \"complex\" \"Stieltjes\" counterexamples",
+     "corpus": "public web index, publisher records (MDPI), preprints.org, arXiv (novelty search of the first draft)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"sqrt\" \"33\"; \"reciprocal moment\" \"cubic\" \"real\"; \"Stieltjes\" \"cubic\" \"log-concavity\" \"zeros\"; \"Weniger\" \"Kurtz\"; \"Weniger\" \"Hutchinson\"; \"Weniger\" \"Jensen polynomials\" \"Stieltjes\"",
+     "corpus": "public web index, arXiv"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "independent bounded literature search by the adversarial audit for an earlier full classification or a reciprocal-Stieltjes universal characterisation; primary-source extraction of Borghi (2026)",
+     "corpus": "Exa search and primary sources (publisher text, preprints.org, arXiv: Kostov-Shapiro 1106.6262, Passare-Rojas-Shapiro 1001.4076, Homeier math/0005209, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "Borghi 2026 (the question, numerical evidence and the Gauss-Lucas heuristic); Borghi-Weniger 2015 and Borghi arXiv:2605.06687 (positive results for special families)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Fixed positive weights divided by arbitrary shifted Stieltjes moments are real-rooted for every admissible measure iff every internal factor-four inequality holds; necessity by a measure isolating any three consecutive moments.",
+   "unit": "method",
+   "paperLocation": "Theorem 3.2; Remark 3.3",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"reciprocal\" \"Stieltjes\" \"Hutchinson\"; \"moment\" \"Kurtz\" \"polynomial\"; \"reciprocal moment\" \"multiplier\"; \"Stieltjes\" \"real-rooted\" \"reciprocal\"; \"reciprocal moment\" \"real zeros\"; \"reciprocal\" \"Stieltjes moments\" \"Hutchinson\"",
+     "corpus": "public web index, arXiv; led to the Passare-Rojas-Shapiro comparison"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "independent bounded literature search by the adversarial audit for an earlier full classification or a reciprocal-Stieltjes universal characterisation; primary-source extraction of Borghi (2026)",
+     "corpus": "Exa search and primary sources (publisher text, preprints.org, arXiv: Kostov-Shapiro 1106.6262, Passare-Rojas-Shapiro 1001.4076, Homeier math/0005209, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "Hutchinson 1923, Kurtz 1992 (sufficiency; sharpness of 4), Kostov-Shapiro 2013; Passare-Rojas-Shapiro 2011 (a different, sign-independent class); classical moment-space geometry (Schmudgen 2017)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Genuine-pole argument: accuracy through order plus positive-definite shifted Hankel matrices give deg gcd(P,Q) < ceil(k/2); a one-moment Legendre perturbation inside the admissible class avoids the finite exceptional set at every order.",
+   "unit": "proof",
+   "paperLocation": "Lemmas 4.2, 4.4, 4.5; Proposition 4.3; Corollary 4.6",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"Stieltjes\" \"poles\" \"2026\"; \"Is Weniger\" \"Borghi\"; \"Weniger\" \"Stieltjes\" \"counterexample\" poles; \"Weniger\" \"branch cut\" \"counterexample\"; \"Borghi\" \"delta\" \"nonreal\"; \"Levin\" \"Stieltjes\" \"complex poles\"; \"Levin-type\" \"Stieltjes\" \"poles\"; \"delta transformation\" \"complex\" \"Stieltjes\" counterexamples",
+     "corpus": "public web index, publisher records (MDPI), preprints.org, arXiv (novelty search of the first draft)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "independent bounded literature search by the adversarial audit for an earlier full classification or a reciprocal-Stieltjes universal characterisation; primary-source extraction of Borghi (2026)",
+     "corpus": "Exa search and primary sources (publisher text, preprints.org, arXiv: Kostov-Shapiro 1106.6262, Passare-Rojas-Shapiro 1001.4076, Homeier math/0005209, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "Homeier 2000 Section 6.3 Theorem 8 (accuracy through order); Hankel positivity (classical)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "One explicit measure (delta_1+10^5 delta_(1/100)+10^-3 e^-t dt) gives Q_4 one nonreal pair of genuine poles for every beta>0 at n=0 and n=1, certified as a polynomial identity in beta; for every fixed n some measure does (Corollary 5.2).",
+   "unit": "object",
+   "paperLocation": "Proposition 5.1; Corollary 5.2",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"nonreal\" \"shift\"; \"Weniger\" \"all positive\" \"shift\" poles; \"delta transformation\" \"quartic\" \"Stieltjes\"; \"Weniger\" \"counterexample\" \"real\" poles",
+     "corpus": "public web index, arXiv"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "independent bounded literature search by the adversarial audit for an earlier full classification or a reciprocal-Stieltjes universal characterisation; primary-source extraction of Borghi (2026)",
+     "corpus": "Exa search and primary sources (publisher text, preprints.org, arXiv: Kostov-Shapiro 1106.6262, Passare-Rojas-Shapiro 1001.4076, Homeier math/0005209, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "None found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Persistence for one fixed measure: Q_k(w/k^2)/(b)_(k-1) -> E_mu; nonreal zeros at all large orders for the cubic measure via a non-real-rooted Jensen polynomial; genuine nonreal poles certified at every 3<=k<=30.",
+   "unit": "statement",
+   "paperLocation": "Theorems 6.1, 6.3; Corollary 6.2; Table 4",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"Stieltjes\" \"poles\" \"2026\"; \"Is Weniger\" \"Borghi\"; \"Weniger\" \"Stieltjes\" \"counterexample\" poles; \"Weniger\" \"branch cut\" \"counterexample\"; \"Borghi\" \"delta\" \"nonreal\"; \"Levin\" \"Stieltjes\" \"complex poles\"; \"Levin-type\" \"Stieltjes\" \"poles\"; \"delta transformation\" \"complex\" \"Stieltjes\" counterexamples",
+     "corpus": "public web index, publisher records (MDPI), preprints.org, arXiv (novelty search of the first draft)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "\"Weniger\" \"sqrt\" \"33\"; \"reciprocal moment\" \"cubic\" \"real\"; \"Stieltjes\" \"cubic\" \"log-concavity\" \"zeros\"; \"Weniger\" \"Kurtz\"; \"Weniger\" \"Hutchinson\"; \"Weniger\" \"Jensen polynomials\" \"Stieltjes\"",
+     "corpus": "public web index, arXiv"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "reviewer-requested literature: Weniger 1989, Levin 1973, Sidi 1981/2003, Brezinski-Redivo-Zaglia, Baker-Graves-Morris, Slevinsky 2025, Polya-Schur, Craven-Csordas, Kostov-Shapiro, Schmudgen, Szego, Weniger-Cizek; positive results for Gamma(2l+1+q) and Euler moments",
+     "corpus": "Crossref and doi.org resolution of every DOI; arXiv texts (Homeier locator, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "Polya-Schur and Craven-Csordas (Jensen polynomials and the Laguerre-Polya class; tools, cited)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Positive theorem: real-rootedness at every order if P_k is real-rooted, if reciprocal moments form a multiplier sequence, or if mu_(r-1)mu_(r+1) >= 4 mu_r^2; covers Gamma(l+a), integer Gamma(nu l+c), Beta weights with integer exponent, log-normal sigma^2>=2log2.; Q_k real-rooted for every shift iff P_k is real-rooted (Remark 7.4).",
+   "unit": "statement",
+   "paperLocation": "Lemma 7.1; Theorem 7.2; Corollary 7.3; Remark 7.4",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"reciprocal\" \"Stieltjes\" \"Hutchinson\"; \"moment\" \"Kurtz\" \"polynomial\"; \"reciprocal moment\" \"multiplier\"; \"Stieltjes\" \"real-rooted\" \"reciprocal\"; \"reciprocal moment\" \"real zeros\"; \"reciprocal\" \"Stieltjes moments\" \"Hutchinson\"",
+     "corpus": "public web index, arXiv; led to the Passare-Rojas-Shapiro comparison"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "reviewer-requested literature: Weniger 1989, Levin 1973, Sidi 1981/2003, Brezinski-Redivo-Zaglia, Baker-Graves-Morris, Slevinsky 2025, Polya-Schur, Craven-Csordas, Kostov-Shapiro, Schmudgen, Szego, Weniger-Cizek; positive results for Gamma(2l+1+q) and Euler moments",
+     "corpus": "Crossref and doi.org resolution of every DOI; arXiv texts (Homeier locator, Borghi 2605.06687)"
+    }
+   ],
+   "closestPriorWork": "Borghi 2026 Sections 4.2, 4.3, 4.6 and Fig. 1 (real-rootedness at n=0, gamma=1 for integer superfactorial, Laguerre and integer-difference Jacobi moments; non-integer Jacobi case with non-real-rooted P_k), credited after the re-review; Borghi-Weniger 2015 Theorem 5.1 (Euler series, recovered); Polya-Schur 1914, Craven-Csordas 1989",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "R. Borghi, Is Weniger's transformation capable of simulating the Stieltjes function branch cut?, Mathematics 14 (2026) 376, doi:10.3390/math14020376; author preprint preprints.org 202512.2647",
+   "usedFor": "The question (Section 3.1), the n=0, gamma=1 specialisation and scenarios (Section 3.3), eqs. (23), (26), (27), the moment catalogue (Section 4)",
+   "readWhat": "Published text in full (domain review; adversarial audit via primary-source extraction); formulas checked against the author preprint eqs. 26, 29, 30, 35, 36 at revision",
+   "date": "2026-10-23",
+   "evidenceLocator": "https://doi.org/10.3390/math14020376; manuscript Section 1"
+  },
+  {
+   "citation": "M. Passare, J. M. Rojas, B. Shapiro, New multiplier sequences via discriminant amoebae, Moscow Math. J. 11 (2011) 547-560; arXiv:1001.4076",
+   "usedFor": "Distinguishing the factor-four cone from sign-independent real-rootedness (Remark 3.3)",
+   "readWhat": "Full arXiv text, Theorem 1 and Corollary 1",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/1001.4076; manuscript Remark 3.3"
+  },
+  {
+   "citation": "H. H. H. Homeier, Scalar Levin-type sequence transformations, J. Comput. Appl. Math. 122 (2000) 81-147; arXiv:math/0005209",
+   "usedFor": "Accuracy through order (Lemma 4.2)",
+   "readWhat": "Section 6.3, Theorem 8 (PDF pp. 36-37)",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/math/0005209; manuscript Lemma 4.2"
+  },
+  {
+   "citation": "R. Borghi, Asymptotic convergence of Weniger's delta-transformation for a class of superfactorially divergent Stieltjes series, arXiv:2605.06687",
+   "usedFor": "Scope comparison with the positive result for Gamma(2l+1+q)",
+   "readWhat": "Sections IV-V, eq. (24)",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/2605.06687; manuscript Section 9"
+  },
+  {
+   "citation": "R. Borghi, E. J. Weniger, Appl. Numer. Math. 94 (2015) 149-178, doi:10.1016/j.apnum.2015.03.007; arXiv:1405.2474",
+   "usedFor": "Real zeros of the Euler-series denominator (Theorem 5.1), recovered in Corollary 7.3",
+   "readWhat": "Metadata and abstract; Section 5.2 read in full by a second auditor",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/1405.2474; manuscript Corollary 7.3"
+  },
+  {
+   "citation": "V. P. Kostov, B. Shapiro, Hardy-Petrovitch-Hutchinson's problem and partial theta function, Duke Math. J. 162 (2013) 825-861; arXiv:1106.6262",
+   "usedFor": "History and sharpness of the constant 4 (Remark 3.3)",
+   "readWhat": "arXiv HTML text, discussion of the factor-four condition and consecutive sections",
+   "date": "2026-10-23",
+   "evidenceLocator": "https://arxiv.org/abs/1106.6262; manuscript Remark 3.3"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Genuine nonreal poles at every order k>=3 for one fixed measure (Conjecture 6.4); k_0 in Theorem 6.3(2) not effective; cancellation not excluded at large k.",
+   "closingQuestion": "Can an effective quantitative Rouche bound plus a large-k non-cancellation argument close the gap above k=30?",
+   "triedOrSearched": "Exact certificate to k=30; the second audit gave an independent exact Rouche certificate of nonreal denominator zeros for every k>=204 (not in the paper; cancellation not excluded); numerical scaled zeros converge to w* of E_mu",
+   "estimatedCost": "days (research-level)",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires a new effective estimate and a non-cancellation argument beyond the Hankel bound; open problem (i)",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Explicit all-shift order-four measure only for n=0 and n=1; the same measure fails at n=2 (Corollary 5.2 gives existence for each fixed n without explicit constants).",
+   "closingQuestion": "Is there an explicit measure certified for n=2 (or all n)?",
+   "triedOrSearched": "Corollary 5.2 (uniform Rouche, proof restored from the first draft); the printed measure has four negative real zeros at n=2, beta=1",
+   "estimatedCost": "several hours of search plus symbolic certification",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Existence is proved; an explicit n=2 witness would need a new search and a degree-18 symbolic certificate, and adds no new theorem",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Weniger-Cizek K_nu family: real-rootedness tested on a finite grid (beta<=5) only; the non-integer Jacobi weights are not real-rooted for every shift (Remark 7.4, beta=20 certificate).",
+   "closingQuestion": "Do these families give multiplier sequences or satisfy another criterion of Theorem 7.2?",
+   "triedOrSearched": "975 exact Sturm counts at 4<=k<=8, beta<=5; 180 further exact cases by the second audit; Remark 7.4 reduces all-shift real-rootedness to P_k",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (iii); Borghi also reports no proof for the K_nu case",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Characterisation of measures with E_mu in the Laguerre-Polya class, and whether that suffices for real-rootedness at all large orders.",
+   "closingQuestion": "Is E_mu in LP equivalent to real-rootedness of Q_k for all large k?",
+   "triedOrSearched": "Necessity direction proved (Corollary 6.2(2)); consistency with multiplier-sequence families noted",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (ii)",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Other Levin-type weights (Levin's t and u transformations) not treated.",
+   "closingQuestion": "Does the three-coefficient isolation argument apply to their weights?",
+   "triedOrSearched": "Theorem 3.2 applies to any fixed positive weights; the weight ratios of other transformations were not computed",
+   "estimatedCost": "days (new weight families and genuine-pole arguments)",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (iv); out of scope for the question answered",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Finite-order results say nothing about convergence of the delta approximants.",
+   "closingQuestion": "Do nonreal poles near the branch point affect convergence for some measure?",
+   "triedOrSearched": "Fixed-measure persistence (Section 6) and the numerical co-occurrence example (Section 8, no causal claim)",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Convergence theory is a separate research programme",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No proof assistant; analytic arguments (realisation lemma, Rouche, perturbation, smoothing, limit theorem) proved in prose only.",
+   "closingQuestion": "Would formalising the cubic threshold or Theorem 3.2 be cheap?",
+   "triedOrSearched": "Exact identities machine-checked by the verifier; prose proofs read by five internal reviewers and attacked by an adversarial audit (first draft); revised proofs spot-checked by the re-review",
+   "estimatedCost": "multi-day formalisation",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Formalisation of Rouche and moment-measure constructions is a separate project",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Hutchinson (1923) and Kurtz (1992) cited without theorem locators.",
+   "closingQuestion": "Can the original texts be opened to add locators?",
+   "triedOrSearched": "Publisher and repository access attempted at novelty search and revision; Kostov-Shapiro cited instead; strict criterion proved in the paper",
+   "estimatedCost": "depends on access",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "No legitimate access path was available",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Material added at revision (Sections 6-8, Table 3) needed review beyond the producer's checks.",
+   "closingQuestion": "Did the re-review and the post-revision adversarial audit find any defect in the new proofs?",
+   "triedOrSearched": "Re-review (C1-C7) and second adversarial audit (no counterexample; R1-R4); all corrections made in a final editor pass; verifier hardened (n=1 assertion, n=2 count, Corollary 5.2 identities, Laguerre constant, beta=20 Jacobi example); final package replayed byte for byte",
+   "estimatedCost": "about 1-2 h of reviewer time",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Verifier did not check the cubic discriminant identity or the quartic Laguerre value (methodology review; audit BW-M1).",
+   "closingQuestion": "Add exact checks of eq. (12) over Q[b,x,y] and of the printed quartic values",
+   "triedOrSearched": "Added to code/verify_all.py; Appendix B narrowed to what the code checks",
+   "estimatedCost": "1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No explicit certified examples for k>=5 (methodology review).",
+   "closingQuestion": "Certify the tail family at k=5..8 with explicit K",
+   "triedOrSearched": "Table 3: smallest K=2^e with exact Sturm counts and gcd 1, 24 cases",
+   "estimatedCost": "1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No fixed-measure result (all reviewers).",
+   "closingQuestion": "Certify to k=30 and prove infinitely many orders",
+   "triedOrSearched": "Theorems 6.1 and 6.3; Conjecture 6.4 for the remainder",
+   "estimatedCost": "half a day",
+   "cheap": false,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No positive result for natural families (domain review, devil's advocate).",
+   "closingQuestion": "A multiplier-sequence or moment-ratio criterion covering Borghi's catalogue",
+   "triedOrSearched": "Theorem 7.2 and Corollary 7.3; exact grid tests",
+   "estimatedCost": "half a day",
+   "cheap": false,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Shift symbol of the published article not mapped (audit BW-M2).",
+   "closingQuestion": "State that the manuscript's beta is the published gamma",
+   "triedOrSearched": "Sentence added in Section 1",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Re-review corrections C1-C7 (factorisation (k-4)(4k-5), Laguerre constant k!/Gamma(m+a+k), residue sign, restored compactness remark or deleted claim, scope of Section 9, credit to Borghi, Figure 1 caption).",
+   "closingQuestion": "Make the seven sentence-level corrections",
+   "triedOrSearched": "Editor-level fixes in the final text; no theorem statement changed",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Post-revision audit points R1-R4 (asymptotic pole-placement claim scope; n-dependence inference; log-convexity overstatement; n=1 certificate not asserted).",
+   "closingQuestion": "Make the four corrections",
+   "triedOrSearched": "Section 9, Section 5 and the mechanism paragraph reworded; verifier assertion added",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted first-round review (editor, three specialist perspectives, devil's advocate) and editorial synthesis",
+  "date": "2026-10-23",
+  "proposals": [
+   "E1 persistence of nonreal poles for one fixed measure (certify to k=30; prove infinitely many orders)",
+   "E2 positive theorem (multiplier-sequence or moment-ratio criterion) and exact tests on Borghi's natural families",
+   "E3 explicit certified examples for k=5-8 and the all-shift quartic for n=1 or n=2",
+   "E4 practical layer: pole locations, residues, accuracy co-occurrence, an exact diagnostic, limits of the factor-four test",
+   "E5 engage Borghi's Gauss-Lucas argument (scenarios (i)/(ii))"
+  ],
+  "actions": [
+   "E1 done: Theorems 6.1 and 6.3, Table 4; Conjecture 6.4 for all k",
+   "E2 done: Theorem 7.2, Corollary 7.3, 975 Sturm counts",
+   "E3 done: Table 3; Proposition 5.1 for n=0,1; Corollary 5.2 for every fixed n",
+   "E4 done numerically (Section 8) with exact counts and gcds",
+   "E5 done: Theorem 7.2(a), Remark 5.3; Remark 7.4 added after the second audit"
+  ]
+ }
+}

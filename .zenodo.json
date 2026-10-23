@@ -1,0 +1,56 @@
+{
+  "title": "Nonreal poles of Weniger's delta transformation for Stieltjes series: a finite-order classification",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> The standard (diagonal and near-diagonal) Pad&eacute; approximants to a Stieltjes series f(z) = &int;(z + t)<sup>&minus;1</sup> d&mu;(t) have their poles on the negative real axis, where f has its branch cut. Borghi (Mathematics 14 (2026) 376) asked whether Weniger's delta transformation, often much faster on factorially divergent Stieltjes series, shares this property: are all zeros of its denominator on the negative real axis?</p><p>This package shows that in general they are not, and says exactly when they are. Write b = n + &beta; for the starting index n and shift &beta;. For every admissible measure the denominator has only negative real zeros at orders one and two; at order three this holds exactly when b &le; (&radic;33 &minus; 5)/2 &asymp; 0.3723; from order four on, no choice of n and &beta; protects every measure. The mechanism is that positive moments can be tuned so that only three consecutive coefficients of the denominator matter, and from order four the delta weights fail the classical Hutchinson&ndash;Kurtz factor-four test for those three. The nonreal zeros are genuine poles (accuracy through order, a Hankel bound on cancellation and a one-moment perturbation), and the witness measures can have moments ~ c&middot;&ell;! or a smooth positive density. For each fixed n one measure gives a nonreal pair of genuine poles at order four for every shift, and an explicit such measure is certified at n = 0 and n = 1; explicit certified examples are given at orders three to eight.</p><p>For one fixed measure, &delta;<sub>1</sub> + 50&delta;<sub>1/50</sub> + 10<sup>&minus;3</sup>e<sup>&minus;t</sup>dt at n = 0, &beta; = 1, the rescaled denominators converge to an entire function, which proves nonreal denominator zeros at every sufficiently large order; genuine nonreal poles are certified exactly at every order from 3 to 30, and genuine poles at every order are stated as a conjecture. On the positive side, real-rootedness holds at every order whenever Borghi's auxiliary polynomial is real-rooted, the reciprocal moments form a multiplier sequence, or the moment ratios &mu;<sub>r+1</sub>/&mu;<sub>r</sub> increase at least fourfold at each step; this covers the Euler series, all &Gamma;(&ell; + a) moments, integer superfactorial families, Beta weights with integer exponent and log-normal moments with &sigma;<sup>2</sup> &ge; 2 log 2 at every starting index, shift and order, extending cases Borghi proved for n = 0, &beta; = 1. Real-rootedness for every shift holds exactly when Borghi's auxiliary polynomial is real-rooted. A practical section (numerical) locates the poles, shows their complex residues and gives an exact Sturm-count diagnostic.</p><p>The archive contains the 15-page manuscript (PDF and LaTeX), a single Python verifier (exact rational arithmetic with the standard library; illustrative sections with mpmath), its deterministic JSON output, semantic negative controls, CI and SHA-256 sums. Assurance boundary: written proofs; exact certificates for every finite claim; a byte-identical producer-side replay of the verifier from the frozen archive; internal AI-assisted review (a multi-perspective review and an AI-assisted adversarial audit by a different model of the first draft, a verification re-review and a second adversarial audit of the revised version). This is not peer review, independent reproduction or formal verification. No proof assistant was used. All results are at fixed finite order and say nothing about convergence of the delta approximants. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23586255",
+  "publication_date": "2026-10-23",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "Stieltjes series",
+    "Weniger delta transformation",
+    "Levin-type transformations",
+    "real zeros",
+    "nonreal poles",
+    "multiplier sequences",
+    "Pade approximation",
+    "Hutchinson-Kurtz criterion",
+    "counterexample",
+    "exact computation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/weniger-delta-nonreal-poles/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/weniger-delta-nonreal-poles/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.3390/math14020376",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.apnum.2015.03.007",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/0167-7977(89)90011-7",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (code/verify_all.py, negative_controls.py, CI workflow) is released under the MIT licence; see LICENSES.md in the archive. Short verbatim quotations from Borghi (2026) remain the source author's text."
+}

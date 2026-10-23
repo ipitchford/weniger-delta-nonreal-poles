@@ -1,0 +1,11 @@
+Licensing for this package
+==========================
+
+Text, figures, results and release records (paper/, results/, README.md and the other
+records listed in LICENSES.md): CC0-1.0
+  https://creativecommons.org/publicdomain/zero/1.0/  (see LICENSE-CC0 and LICENSE-CC0.txt)
+
+Code (code/, negative_controls.py, .github/workflows/): MIT licence (see LICENSE-MIT.txt).
+results/ is CC0-1.0 and is additionally offered under MIT, as the LICENSE-MIT.txt header says.
+
+Third-party material keeps its own terms; see LICENSES.md.

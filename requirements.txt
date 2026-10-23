@@ -1,0 +1,3 @@
+# Python 3.13 (3.9+ should work). The exact sections of code/verify_all.py use only the standard library.
+# mpmath is needed for the numerical_* sections; byte identity of results/verification.json was established with:
+mpmath==1.3.0

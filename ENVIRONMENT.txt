@@ -1,0 +1,20 @@
+Runtime: Python 3.13 (3.9 or later should work). The exact sections (A-F) of code/verify_all.py use only the
+  standard library: int, fractions.Fraction, math.comb/factorial/gcd/lcm. The numerical_* sections use
+  mpmath==1.3.0 (requirements.txt) at 60 digits; without mpmath they are skipped and the output then differs from
+  results/verification.json.
+Exact arithmetic: Sturm sequences by primitive pseudo-remainders over Z[z], exact gcds, Sylvester determinants and
+  multivariate identities over Q[b], Q[beta] and Q[b,x,y]. No floating point enters any certificate.
+  negative_controls.py uses the standard library only.
+Determinism: JSON is written with sorted keys, indent 1, no timestamps and no paths; floats in the numerical_*
+  sections are rounded to 8 significant figures. Byte identity of those sections is expected with mpmath 1.3.0.
+Optimised mode: all checks are explicit RuntimeError checks, so python -O disables nothing; scripts are run with -B so
+  no bytecode is written beside them.
+Release replay host: macOS 27.0.1 (Darwin, arm64), CPython 3.13.5 (virtual environment), mpmath 1.3.0.
+Runtime on that host: verify_all.py about 100 s, single-threaded (dominated by the order-30 persistence certificate and
+  the high-precision root finding of numerical_persistence_scaled_zeros); negative_controls.py about 15 s.
+  --kmax K lowers the persistence order (the output then differs from the shipped file).
+Continuous integration: GitHub Actions, ubuntu-latest, CPython 3.13 (.github/workflows/replay.yml): SHA256SUMS, the
+  full verify_all.py (default --kmax 30) with byte-for-byte comparison of results/verification.json, and the negative
+  controls.
+PDF: built with pdflatex (pdfTeX 1.40.29, TeX Live 2026; run three times) from paper/paper.tex; the PDF is not part of the byte-for-byte
+  replay.
